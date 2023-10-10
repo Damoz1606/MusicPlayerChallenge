@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter';
+    color: #E5E7EB;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    background-image: url(../public/images/bg.jpg);
+    width: 100%;
+    background-size: 100vmax 100vmax;
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 450px;
+    background-color: #2129368d;
+    border-radius: 20px;
+}
+
+.card-content {
+    margin: 0.5rem 1rem;
+}
+
+.card-img {
+    margin-bottom: 0.5rem;
+}
+
+.card-img img {
+    border-radius: 20px;
+    box-shadow: 0 0 2px 0 #C93B76;
+}
+
+.card-text,
+.music-slider {
+    margin-bottom: 1.5rem;
+}
+
+.card-text>div {
+    margin: 0.25rem;
+}
+
+.center {
+    align-self: center;
+}
+
+.music-title {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+}
+
+.timer>.remain,
+.timer>.total,
+.music-artist {
+    color: #4D5562;
+    font-size: 10px;
+}
+
+.music-artist {
+    text-align: center;
+    letter-spacing: 0.25px;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-box>.btn {
+    padding: 5px;
+}
+
+.btn {
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-side {
+    background-color: transparent;
+}
+
+.btn-side>img {
+    transition: filter .3s ease;
+}
+
+.btn-side:hover>img {
+    filter: brightness(0) invert(1);
+}
+
+.btn-main {
+    background-color: #C93B76;
+    box-shadow: 0px 0px 5px 0px #C93B76;
+    transition: background-color .3s ease;
+}
+
+.btn-main:hover {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px #c93b7600;
+}
+
+.btn-main img {
+    filter: brightness(0) invert(1);
+}
+
+.music-slider>input[type="range"] {
+    width: 100%;
+    height: 3px;
+    padding: 0;
+    accent-color: #C93B76 !important;
+    border-radius: .3rem;
+}
+
+.music-slider>input[type="range"]::-webkit-slider-thumb {
+    visibility: hidden;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.timer>.remain {
+    text-align: left;
+}
+.timer>.total {
+    text-align: right;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="wrapper background justify-content-center align-items-center">
+        <div class="card center flex align-items-center">
+            <div class="card-content">
+                <div class="card-img">
+                    <img id="musicImage" src="assets/public/images/cover-1.png" alt="" srcset="">
+                </div>
+                <div class="card-text">
+                    <div id="musicTitle" class="music-title">Lost in the City Lights</div>
+                    <div id="musicArtist" class="music-artist">Cosmo Sheldrake</div>
+                </div>
+                <div class="music-slider">
+                    <div class="timer">
+                        <div class="remain" id="remainTime">00:00</div>
+                        <div class="total" id="totalTime">03:15</div>
+                    </div>
+                    <input type="range" min="0" max="100" id="musicTrack" value="0" oninput="changeTrackTime()">
+                </div>
+                <div class="btn-box">
+                    <button class="btn btn-side" id="btnPrev">
+                        <img src="assets/public/icons/Stop_and_play_fill.svg" alt="" srcset="">
+                    </button>
+                    <button class="btn btn-main" id="btnPause">
+                        <img src="assets/public/icons/Play_fill.svg" alt="" srcset="">
+                    </button>
+                    <button class="btn btn-side" id="btnNext">
+                        <img src="assets/public/icons/Stop_and_play_fill_reverse.svg" alt="" srcset="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/index.js"></script>
+
+</html>
